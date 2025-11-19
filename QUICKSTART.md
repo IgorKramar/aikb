@@ -38,14 +38,17 @@ npm run docs:dev
    git push -u origin main
    ```
 
-5. **Настройте GitHub Pages**:
+5. **Настройте права доступа для GitHub Actions** (ВАЖНО!):
+   - Перейдите в Settings → Actions → General
+   - Найдите раздел "Workflow permissions"
+   - Выберите **"Read and write permissions"** (не только "Read")
+   - Поставьте галочку **"Allow GitHub Actions to create and approve pull requests"**
+   - Сохраните изменения
+
+6. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
    - Source: выберите "GitHub Actions"
    - Сохраните
-
-6. **Включите GitHub Actions** (если не включены):
-   - Settings → Actions → General
-   - Убедитесь, что Actions включены
 
 7. **Дождитесь деплоя**:
    - GitHub Actions автоматически соберёт и задеплоит сайт
@@ -96,6 +99,15 @@ npm run docs:serve        # Предпросмотр собранного сай
 
 ## Решение проблем
 
+### Permission denied (403 ошибка)
+
+Если видите ошибку `Permission to ... denied to github-actions[bot]`:
+
+1. Перейдите в Settings → Actions → General
+2. В разделе "Workflow permissions" выберите **"Read and write permissions"**
+3. Поставьте галочку "Allow GitHub Actions to create and approve pull requests"
+4. Сохраните и перезапустите workflow
+
 ### Сайт не открывается / 404
 
 - Проверьте `base` в `.vuepress/config.js` — должен соответствовать названию репозитория
@@ -108,4 +120,4 @@ npm run docs:serve        # Предпросмотр собранного сай
 - Проверьте, что файл `.github/workflows/deploy.yml` существует
 - Посмотрите логи в разделе Actions
 
-Подробнее в [DEPLOY.md](./DEPLOY.md)
+Подробнее в [DEPLOY.md](./DEPLOY.md) и [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)

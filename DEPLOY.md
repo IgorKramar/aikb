@@ -43,10 +43,14 @@ npm run docs:build
 3. **Включите GitHub Actions**:
    - Перейдите в Settings → Actions → General
    - Убедитесь, что Actions включены
+   - В разделе "Workflow permissions" выберите "Read and write permissions"
+   - Поставьте галочку "Allow GitHub Actions to create and approve pull requests"
+   - Сохраните изменения
 
 4. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
    - Source: выберите "GitHub Actions"
+   - Если видите ошибку о правах доступа, убедитесь, что в шаге 3 вы включили "Read and write permissions"
 
 5. **Сделайте коммит и пуш**:
    ```bash
