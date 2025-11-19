@@ -4,20 +4,25 @@
 
 Если вы видите ошибку:
 ```
-remote: Permission to USERNAME/REPO.git denied to github-actions[bot].
+remote: Permission to USERNAME/REPO.git denied
 fatal: unable to access 'https://github.com/USERNAME/REPO.git/': The requested URL returned error: 403
 ```
 
 ### Решение:
 
-1. **Перейдите в настройки репозитория**:
-   - Settings → Actions → General
+1. **Проверьте, что Personal Access Token создан**:
+   - Перейдите в GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - Убедитесь, что токен существует и не истёк
+   - Проверьте, что у токена есть права `repo` (или `public_repo` для публичных репозиториев)
 
-2. **Настройте права доступа для Workflow**:
-   - Найдите раздел "Workflow permissions"
-   - Выберите **"Read and write permissions"** (не "Read repository contents and packages permissions")
-   - Поставьте галочку **"Allow GitHub Actions to create and approve pull requests"**
-   - Нажмите "Save"
+2. **Проверьте, что токен добавлен в Secrets**:
+   - В репозитории: Settings → Secrets and variables → Actions
+   - Должен быть секрет с именем **`PERSONAL_TOKEN`** (именно так, как в workflow!)
+   - Если нет — создайте новый:
+     - New repository secret
+     - Name: `PERSONAL_TOKEN`
+     - Secret: вставьте ваш токен
+     - Add secret
 
 3. **Проверьте настройки GitHub Pages**:
    - Settings → Pages
@@ -27,6 +32,12 @@ fatal: unable to access 'https://github.com/USERNAME/REPO.git/': The requested U
    - Перейдите в Actions
    - Найдите последний failed workflow
    - Нажмите "Re-run all jobs"
+
+### Если токен потерян или не работает:
+
+1. Создайте новый токен (см. инструкцию в DEPLOY.md)
+2. Обновите секрет `PERSONAL_TOKEN` в репозитории
+3. Перезапустите workflow
 
 ## Проблема: Сайт не открывается / 404 ошибка
 

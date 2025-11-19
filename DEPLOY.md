@@ -40,26 +40,41 @@ npm run docs:build
    - Откройте `.vuepress/config.js`
    - Измените `base: '/aikb/'` на `base: '/ваш-репозиторий/'` (если репозиторий не называется `aikb`)
 
-3. **Включите GitHub Actions**:
+3. **Создайте Personal Access Token (PAT)**:
+   - Перейдите в Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - Нажмите "Generate new token" → "Generate new token (classic)"
+   - Название: `GitHub Pages Deploy` (или любое другое)
+   - Срок действия: выберите нужный (рекомендуется "No expiration" или "90 days")
+   - Права доступа (scopes):
+     - ✅ `repo` (полный доступ к репозиториям)
+     - Или минимально: ✅ `public_repo` (если репозиторий публичный)
+   - Нажмите "Generate token"
+   - **ВАЖНО**: Скопируйте токен сразу! Он показывается только один раз
+   - Если потеряли токен, создайте новый
+
+4. **Добавьте токен в Secrets репозитория**:
+   - Перейдите в Settings → Secrets and variables → Actions
+   - Нажмите "New repository secret"
+   - Name: `PERSONAL_TOKEN` (именно так, как в workflow)
+   - Secret: вставьте скопированный токен
+   - Нажмите "Add secret"
+
+5. **Включите GitHub Actions**:
    - Перейдите в Settings → Actions → General
    - Убедитесь, что Actions включены
-   - В разделе "Workflow permissions" выберите "Read and write permissions"
-   - Поставьте галочку "Allow GitHub Actions to create and approve pull requests"
-   - Сохраните изменения
 
-4. **Настройте GitHub Pages**:
+6. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
    - Source: выберите "GitHub Actions"
-   - Если видите ошибку о правах доступа, убедитесь, что в шаге 3 вы включили "Read and write permissions"
 
-5. **Сделайте коммит и пуш**:
+7. **Сделайте коммит и пуш**:
    ```bash
    git add .
    git commit -m "Initial commit with VuePress"
    git push origin main
    ```
 
-6. **Дождитесь деплоя**:
+8. **Дождитесь деплоя**:
    - GitHub Actions автоматически соберёт и задеплоит сайт
    - Сайт будет доступен по адресу: `https://ваш-username.github.io/aikb/`
 

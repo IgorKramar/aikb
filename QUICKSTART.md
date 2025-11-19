@@ -38,19 +38,27 @@ npm run docs:dev
    git push -u origin main
    ```
 
-5. **Настройте права доступа для GitHub Actions** (ВАЖНО!):
-   - Перейдите в Settings → Actions → General
-   - Найдите раздел "Workflow permissions"
-   - Выберите **"Read and write permissions"** (не только "Read")
-   - Поставьте галочку **"Allow GitHub Actions to create and approve pull requests"**
-   - Сохраните изменения
+5. **Создайте Personal Access Token**:
+   - Перейдите в GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - Нажмите "Generate new token (classic)"
+   - Название: `GitHub Pages Deploy`
+   - Права: выберите `repo` (или `public_repo` для публичных репозиториев)
+   - Нажмите "Generate token"
+   - **Скопируйте токен** (показывается только один раз!)
 
-6. **Настройте GitHub Pages**:
+6. **Добавьте токен в Secrets**:
+   - В репозитории: Settings → Secrets and variables → Actions
+   - New repository secret
+   - Name: `PERSONAL_TOKEN`
+   - Secret: вставьте скопированный токен
+   - Add secret
+
+7. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
    - Source: выберите "GitHub Actions"
    - Сохраните
 
-7. **Дождитесь деплоя**:
+8. **Дождитесь деплоя**:
    - GitHub Actions автоматически соберёт и задеплоит сайт
    - Сайт будет доступен по адресу: `https://ваш-username.github.io/ваш-репозиторий/`
 
@@ -101,12 +109,19 @@ npm run docs:serve        # Предпросмотр собранного сай
 
 ### Permission denied (403 ошибка)
 
-Если видите ошибку `Permission to ... denied to github-actions[bot]`:
+Если видите ошибку `Permission to ... denied`:
 
-1. Перейдите в Settings → Actions → General
-2. В разделе "Workflow permissions" выберите **"Read and write permissions"**
-3. Поставьте галочку "Allow GitHub Actions to create and approve pull requests"
-4. Сохраните и перезапустите workflow
+1. **Проверьте, что токен создан правильно**:
+   - Убедитесь, что токен имеет права `repo` (или `public_repo`)
+   - Проверьте, что токен не истёк
+
+2. **Проверьте, что токен добавлен в Secrets**:
+   - Settings → Secrets and variables → Actions
+   - Должен быть секрет с именем `PERSONAL_TOKEN` (именно так!)
+   - Если нет — создайте новый
+
+3. **Перезапустите workflow**:
+   - Actions → выберите failed workflow → Re-run all jobs
 
 ### Сайт не открывается / 404
 
