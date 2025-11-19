@@ -38,7 +38,19 @@ module.exports = {
             '/topics/prompting-mistakes',
             '/topics/advanced-prompting',
             '/topics/chain-of-thought',
-            '/topics/prompt-templates'
+            '/topics/prompt-templates',
+            '/topics/chatgpt-context-management'
+          ]
+        },
+        {
+          title: 'Практика (Уровень 1-2)',
+          collapsable: true,
+          children: [
+            '/topics/claude-large-documents',
+            '/topics/custom-gpts',
+            '/topics/ai-content-creation',
+            '/topics/ai-books-creation',
+            '/topics/midjourney-practical-guide'
           ]
         },
         {
