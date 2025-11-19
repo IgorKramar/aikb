@@ -61,6 +61,7 @@ module.exports = {
             '/topics/ai-books-creation',
             '/topics/midjourney-practical-guide',
             '/topics/midjourney-complete-guide',
+            '/topics/gpt-agents-practical',
             '/topics/ai-artist'
           ]
         },
@@ -91,6 +92,7 @@ module.exports = {
             '/topics/vector-databases',
             '/topics/fine-tuning',
             '/topics/lora',
+            '/topics/lora-creation-guide',
             '/topics/attention-mechanism'
           ]
         },
@@ -104,7 +106,8 @@ module.exports = {
             '/tools/github-copilot',
             '/tools/midjourney',
             '/tools/perplexity',
-            '/tools/google-ai-studio'
+            '/tools/google-ai-studio',
+            '/tools/syntx'
           ]
         }
       ]
