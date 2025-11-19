@@ -60,6 +60,7 @@ module.exports = {
             '/topics/ai-content-creation',
             '/topics/ai-books-creation',
             '/topics/midjourney-practical-guide',
+            '/topics/midjourney-complete-guide',
             '/topics/ai-artist'
           ]
         },
