@@ -17,14 +17,6 @@ module.exports = {
     sidebar: {
       '/': [
         {
-          title: 'Начало работы',
-          collapsable: false,
-          children: [
-            '/README',
-            '/index'
-          ]
-        },
-        {
           title: 'Основы (Уровень 0)',
           collapsable: true,
           children: [
