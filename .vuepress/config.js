@@ -59,7 +59,8 @@ module.exports = {
             '/topics/custom-gpts',
             '/topics/ai-content-creation',
             '/topics/ai-books-creation',
-            '/topics/midjourney-practical-guide'
+            '/topics/midjourney-practical-guide',
+            '/topics/ai-artist'
           ]
         },
         {
@@ -72,16 +73,19 @@ module.exports = {
             '/topics/what-is-model',
             '/topics/neural-network-training',
             '/topics/hallucinations',
+            '/topics/why-ai-lies',
             '/topics/tokens-context',
             '/topics/model-parameters',
             '/topics/rag-basics',
-            '/topics/agents-intro'
+            '/topics/agents-intro',
+            '/topics/local-ai-models'
           ]
         },
         {
           title: 'Продвинутые темы (Уровень 3)',
           collapsable: true,
           children: [
+            '/topics/ai-full-academic',
             '/topics/embeddings',
             '/topics/vector-databases',
             '/topics/fine-tuning',
