@@ -63,7 +63,8 @@ module.exports = {
             '/topics/midjourney-complete-guide',
             '/topics/gpt-agents-practical',
             '/topics/ai-artist',
-            '/topics/way-of-ai-artist-in-omsk'
+            '/topics/way-of-ai-artist-in-omsk',
+            '/topics/use-flux-in-syntxai'
           ]
         },
         {
@@ -108,7 +109,8 @@ module.exports = {
             '/tools/midjourney',
             '/tools/perplexity',
             '/tools/google-ai-studio',
-            '/tools/syntx'
+            '/tools/syntx',
+            '/tools/flux'
           ]
         }
       ]
