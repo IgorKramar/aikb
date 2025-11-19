@@ -62,7 +62,8 @@ module.exports = {
             '/topics/midjourney-practical-guide',
             '/topics/midjourney-complete-guide',
             '/topics/gpt-agents-practical',
-            '/topics/ai-artist'
+            '/topics/ai-artist',
+            '/topics/way-of-ai-artist-in-omsk'
           ]
         },
         {
