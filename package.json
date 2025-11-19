@@ -1,0 +1,26 @@
+{
+  "name": "ai-from-zero",
+  "version": "1.0.0",
+  "description": "Самая понятная русскоязычная база знаний об ИИ — от абсолютного нуля до профессионального уровня",
+  "scripts": {
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build .",
+    "docs:serve": "vuepress serve ."
+  },
+  "keywords": [
+    "ai",
+    "искусственный интеллект",
+    "нейросети",
+    "машинное обучение",
+    "база знаний",
+    "обучение"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "markdown-it-task-lists": "^2.1.1"
+  }
+}
