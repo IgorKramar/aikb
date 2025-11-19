@@ -25,7 +25,8 @@ module.exports = {
             '/topics/ai-mistakes',
             '/topics/ai-trust',
             '/topics/ai-safety-basics',
-            '/topics/ai-in-daily-life'
+            '/topics/ai-in-daily-life',
+            '/topics/ai-ml-neural-networks-difference'
           ]
         },
         {
@@ -39,13 +40,21 @@ module.exports = {
             '/topics/advanced-prompting',
             '/topics/chain-of-thought',
             '/topics/prompt-templates',
-            '/topics/chatgpt-context-management'
+            '/topics/chatgpt-context-management',
+            '/topics/chatgpt-step-by-step-instructions'
           ]
         },
         {
           title: 'Практика (Уровень 1-2)',
           collapsable: true,
           children: [
+            '/topics/ai-models-comparison',
+            '/topics/chatgpt-models-explained',
+            '/topics/chatgpt-advanced-features',
+            '/topics/chatgpt-business-cases',
+            '/topics/ai-video-generation',
+            '/topics/ai-image-generation-free',
+            '/topics/ai-voice-synthesis',
             '/topics/claude-large-documents',
             '/topics/custom-gpts',
             '/topics/ai-content-creation',
@@ -57,6 +66,9 @@ module.exports = {
           title: 'Технические основы (Уровень 1-2)',
           collapsable: true,
           children: [
+            '/topics/neural-network-basics',
+            '/topics/neural-network-training-process',
+            '/topics/neural-network-deep-dive',
             '/topics/what-is-model',
             '/topics/neural-network-training',
             '/topics/hallucinations',
@@ -86,7 +98,8 @@ module.exports = {
             '/tools/cursor',
             '/tools/github-copilot',
             '/tools/midjourney',
-            '/tools/perplexity'
+            '/tools/perplexity',
+            '/tools/google-ai-studio'
           ]
         }
       ]
