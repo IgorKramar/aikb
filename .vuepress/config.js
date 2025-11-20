@@ -11,8 +11,8 @@ module.exports = {
     logo: '/logo.png',
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'База знаний', link: '/index.html' },
-      { text: 'GitHub', link: 'https://github.com/yourusername/aikb' }
+      { text: 'База знаний', link: '/index' },
+      { text: 'GitHub', link: 'https://github.com/IgorKramar/aikb' }
     ],
     sidebar: {
       '/': [
