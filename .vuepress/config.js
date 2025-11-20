@@ -8,7 +8,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
-    logo: '/logo.png',
+    logo: 'https://github.com/IgorKramar/aikb/blob/main/logo.png?raw=true',
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'База знаний', link: '/index' },
