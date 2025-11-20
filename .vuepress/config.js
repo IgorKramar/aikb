@@ -1,7 +1,7 @@
 module.exports = {
   title: 'ИИ от нуля до профи',
   description: 'Самая понятная русскоязычная база знаний об искусственном интеллекте, нейросетях и агентах',
-  base: '/aikb/index',
+  base: '/aikb/',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ['meta', { name: 'description', content: 'База знаний об ИИ для всех: от школьников до разработчиков' }],
