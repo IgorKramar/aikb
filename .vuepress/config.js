@@ -1,7 +1,7 @@
 module.exports = {
   title: 'ИИ от нуля до профи',
   description: 'Самая понятная русскоязычная база знаний об искусственном интеллекте, нейросетях и агентах',
-  base: '/aikb/',
+  base: '/aikb/index',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ['meta', { name: 'description', content: 'База знаний об ИИ для всех: от школьников до разработчиков' }],
@@ -10,8 +10,7 @@ module.exports = {
   themeConfig: {
     logo: 'https://github.com/IgorKramar/aikb/blob/main/logo.png?raw=true',
     nav: [
-      { text: 'Главная', link: '/' },
-      { text: 'База знаний', link: '/index' },
+      { text: 'Главная', link: '/index' },
       { text: 'GitHub', link: 'https://github.com/IgorKramar/aikb' }
     ],
     sidebar: {
