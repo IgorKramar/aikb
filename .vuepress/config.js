@@ -26,7 +26,8 @@ module.exports = {
             '/topics/ai-trust',
             '/topics/ai-safety-basics',
             '/topics/ai-in-daily-life',
-            '/topics/ai-ml-neural-networks-difference'
+            '/topics/ai-ml-neural-networks-difference',
+            '/topics/ai-mastery-plan'
           ]
         },
         {
