@@ -44,7 +44,7 @@ npm run docs:build
    - Перейдите в Settings → Developer settings → Personal access tokens → Tokens (classic)
    - Нажмите "Generate new token" → "Generate new token (classic)"
    - Название: `GitHub Pages Deploy` (или любое другое)
-   - Срок действия: выберите нужный (рекомендуется "No expiration" или "90 days")
+   - Срок действия: выберите нужный (выберите ограниченный срок по вашей политике доступа)
    - Права доступа (scopes):
      - ✅ `repo` (полный доступ к репозиториям)
      - Или минимально: ✅ `public_repo` (если репозиторий публичный)
@@ -65,7 +65,7 @@ npm run docs:build
 
 6. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
-   - Source: выберите "GitHub Actions"
+   - Source: выберите "Deploy from a branch", ветку `gh-pages` и `/ (root)`
 
 7. **Сделайте коммит и пуш**:
    ```bash
