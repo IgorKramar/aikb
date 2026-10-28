@@ -26,7 +26,7 @@ fatal: unable to access 'https://github.com/USERNAME/REPO.git/': The requested U
 
 3. **Проверьте настройки GitHub Pages**:
    - Settings → Pages
-   - Source: должен быть выбран **"GitHub Actions"** (не "Deploy from a branch")
+   - Source: выберите **"Deploy from a branch"**, ветку `gh-pages` и `/ (root)`
 
 4. **Перезапустите workflow**:
    - Перейдите в Actions
@@ -50,7 +50,7 @@ fatal: unable to access 'https://github.com/USERNAME/REPO.git/': The requested U
 
 2. **Настройки GitHub Pages**:
    - Settings → Pages
-   - Убедитесь, что выбрано "GitHub Actions"
+   - Убедитесь, что выбрано "Deploy from a branch", ветка `gh-pages` и `/ (root)`
    - Проверьте, что деплой прошёл успешно (зелёная галочка в Actions)
 
 3. **Подождите несколько минут**:

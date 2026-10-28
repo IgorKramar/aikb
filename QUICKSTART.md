@@ -55,7 +55,7 @@ npm run docs:dev
 
 7. **Настройте GitHub Pages**:
    - Перейдите в Settings → Pages
-   - Source: выберите "GitHub Actions"
+   - Source: выберите "Deploy from a branch", ветку `gh-pages` и `/ (root)`
    - Сохраните
 
 8. **Дождитесь деплоя**:
