@@ -14,6 +14,8 @@ Russian-language learning notes · Four difficulty levels · A searchable VuePre
 
 [Read online](https://igorkramar.github.io/aikb/) · [Contents](../index.md) · [Run locally](#run-locally) · [Publishing](#publishing)
 
+[![MIT](https://img.shields.io/badge/license-MIT-9ece6a?style=flat-square)](../LICENSE)
+
 </div>
 
 A collection of learning cards about artificial intelligence, language models, prompting, agents and the tools around them. Start with everyday examples, then follow the links into technical topics.
@@ -62,4 +64,4 @@ Corrections, clearer examples and updated links are welcome. Edit the relevant M
 
 ## License
 
-The package declares MIT in [`package.json`](../package.json). This checkout has no standalone license file. Third-party names and linked materials retain their respective rights.
+[MIT](../LICENSE) · Copyright © 2026 Igor Kramar. Third-party materials and linked resources retain their respective licenses and rights.
